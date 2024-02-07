@@ -1,0 +1,134 @@
+.gp-voucher {
+	position: relative;
+
+	.arrow-down--white {
+		margin-bottom: 80px;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__wrapper {
+		position: relative;
+		z-index: 2;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #f97231;
+		height: 100%;
+	}
+
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		min-height: 270px;
+		padding-top: 40px;
+
+		h1 {
+			color: #f97231;
+
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 104.688%;
+			/* 37.688px */
+		}
+
+		p {
+			color: #000;
+
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 28px;
+			/* 175% */
+		}
+	}
+
+	&__item {
+		position: relative;
+		border-radius: 19px;
+		background: #fff;
+		box-shadow: 0px 0px 7.7px 1px rgba(0, 0, 0, 0.1);
+		margin-bottom: 48px;
+
+		&-image {
+			width: 100%;
+
+			.cms-element-image .cms-image-container {
+				padding-top: 182px;
+				position: relative;
+				width: 100%;
+			}
+
+			img {
+				position: absolute;
+				width: 100%;
+				max-width: 182px !important;
+				margin: auto;
+				height: auto;
+				object-fit: contain;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+
+		&-content {
+			padding: 35px 22px 24px 22px;
+			position: relative;
+			background-image: linear-gradient(to right, #bcbcbc 40%, rgba(255, 255, 255, 0) 20%);
+			background-position: top;
+			background-size: 20px 2px;
+			background-repeat: repeat-x;
+		}
+
+		&-name {
+			color: #000;
+			font-family: Poppins;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100.636%;
+			/* 20.127px */
+			letter-spacing: -0.6px;
+			margin-bottom: 8px;
+		}
+
+		&-desc {
+			color: #acabab;
+			font-family: Poppins;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 122%;
+			/* 18.3px */
+			letter-spacing: -0.45px;
+			margin-bottom: 24px;
+		}
+
+		&-button {
+			color: #fff;
+			font-family: Poppins;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100.636%;
+			/* 15.095px */
+			letter-spacing: -0.45px;
+			text-transform: uppercase;
+			border-radius: 45px;
+			background: #f97231;
+			box-shadow: 0px 0px 7.7px 1px rgba(0, 0, 0, 0.1);
+			padding: 10px 20px;
+		}
+	}
+}
