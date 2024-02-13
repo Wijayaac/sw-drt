@@ -13,8 +13,8 @@ services:
       - "9999:9999"
     volumes:
       - "db_volume:/var/lib/mysql"
-      - "./src/custom/plugins/ThStarterPlugin:/var/www/html/custom/plugins/ThStarterPlugin"
-      - "./src/custom/plugins/ThStarterTheme:/var/www/html/custom/plugins/ThStarterTheme"
+      - "./src/plugins/ThStarterPlugin:/var/www/html/custom/plugins/ThStarterPlugin"
+      - "./src/plugins/ThStarterTheme:/var/www/html/custom/plugins/ThStarterTheme"
     networks:
       - web
     environment:
