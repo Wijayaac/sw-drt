@@ -1,0 +1,21 @@
+<div class="images-text">
+	<div class="images-text__wrapper container">
+		{% set element = block.slots.getSlot('alt-image') %}
+		{% set id = element.id %}
+		<div class="images-text__image images-text__image-top" data-cms-element-id="{{ id }}">
+			{% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+		</div>
+		{% set element = block.slots.getSlot('text') %}
+		{% set id = element.id %}
+		<div class="images-text__text" data-cms-element-id="{{ id }}">
+			{% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+		</div>
+
+		{% set element = block.slots.getSlot('primary-image') %}
+		{% set id = element.id %}
+		<div class="images-text__image images-text__image-bottom" data-cms-element-id="{{ id }}">
+			{% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+		</div>
+	</div>
+</div>
+{# TODO: responsive, refactor, and styling #}
