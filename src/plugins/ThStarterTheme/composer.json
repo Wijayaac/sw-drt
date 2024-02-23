@@ -1,18 +1,19 @@
 {
-	"name": "swag/theme-skeleton",
-	"description": "Theme skeleton plugin",
-	"type": "shopware-platform-plugin",
-	"license": "MIT",
-	"autoload": {
-		"psr-4": {
-			"ThStarterTheme\\": "src/"
-		}
-	},
-	"extra": {
-		"shopware-plugin-class": "ThStarterTheme\\ThStarterTheme",
-		"label": {
-			"de-DE": "Theme Great Pumpkins",
-			"en-GB": "Theme Great Pumpkins"
-		}
-	}
+  "name": "swag/theme-skeleton",
+  "description": "Think11 Starter Theme",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.1",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ThStarterTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "ThStarterTheme\\ThStarterTheme",
+    "label": {
+      "de-DE": "Theme Do Rad Things",
+      "en-GB": "Theme Do Rad Things"
+    }
+  }
 }

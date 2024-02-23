@@ -26,6 +26,10 @@ $drt-heading-font: "Poppins", sans-serif;
 @import "components/gp-achievement-list";
 @import "components/images-text";
 
+// DRT
+@import "components/product-cards";
+@import "components/products-listing";
+
 // do rad things
 @import "components/text";
 
@@ -47,6 +51,13 @@ a,
 a:hover {
   color: black;
   text-decoration: none;
+}
+
+.cms-page {
+  padding-top: 80px;
+  @media screen and (min-width: 991px) {
+    padding-top: 120px;
+  }
 }
 
 .gp-btn {
